@@ -50,7 +50,7 @@ def check_matches():
         if (
             status.get("short") in ("1H", "2H", "ET")
             and minute is not None
-            and 1 <= minute <= 60
+            and and minute >= 60
             and home_score == 0
             and away_score == 0
             and match_id not in sent_matches
